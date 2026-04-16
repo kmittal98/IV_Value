@@ -4,7 +4,7 @@ import math
 pd.set_option('display.max_columns', None)
 
 def getIVValue(df,coloumnName,targetVariable):
-    # print("Hello") - Just checking commit changes
+    # print("Hello") - Just checking commit changes This is Dev Branch
     try:
         if df[coloumnName].dtype != "object":
             df["{}_rank".format(coloumnName)] = pd.cut(df[coloumnName],10,labels=[0,1,2,3,4,5,6,7,8,9])
